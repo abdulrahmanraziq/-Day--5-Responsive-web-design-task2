@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f45333a1f0.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                        <label class="form-label fw-bold">Name <span class="text-danger">*</span></label>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"  name="firstName">
+                            <p>First</p>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" name="lastName">
+                            <p>Last</p>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                          </div>
+                      </form>
+                      <label class="form-label fw-bold user-label">Your Experience <span class="text-danger">*</span></label>
+                      <div class="star-icon mb-3">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <p class="mt-3">Overall how would you rate you experience with us?</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <label class="form-label fw-bold user-label">How Satisfied are you with<span class="text-danger">*</span></label>
+                  <div class="table-responsive">
+                    <table class="table table-striped user-table">
+                      <thead class="custom-thead">
+                        <tr>
+                          <th></th>
+                          <th class="text-center">Very Unsatisfied</th>
+                          <th class="text-center">UnSatisfied</th>
+                          <th class="text-center">Neutral</th>
+                          <th class="text-center">Satisfied</th>
+                          <th class="text-center">Very Satisfied</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="custom-table-width">Purchase</td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="purchaseRadio1" name="optradioPurchase" value="veryUnsatified"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="purchaseRadio2" name="optradioPurchase" value="unSatisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="purchaseRadio3" name="optradioPurchase" value="neutral"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="purchaseRadio4" name="optradioPurchase" value="satisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="purchaseRadio5" name="optradioPurchase" value="verySatified"></td>
+                        </tr>
+                        <tr>
+                          <td class="custom-table-width">Service</td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio1" name="optradioService" value="veryUnsatified"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio2" name="optradioService" value="unSatisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio3" name="optradioService" value="neutral"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio4" name="optradioService" value="satisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio5" name="optradioService" value="verySatified"></td>
+                        </tr>
+                        <tr>
+                          <td class="custom-table-width">Company Overall</td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio1" name="optradioCompanyOverall" value="veryUnsatified"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio2" name="optradioCompanyOverall" value="unSatisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio3" name="optradioCompanyOverall" value="neutral"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio4" name="optradioCompanyOverall" value="satisfied"></td>
+                          <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio5" name="optradioCompanyOverall" value="verySatified"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                    
+                      <label class="form-label fw-bold user-label">How likely are you to<span class="text-danger">*</span></label>
+                      <div class="table-responsive">
+
+                      
+                      <table class="table table-striped user-table">
+                        <thead class="custom-thead">
+                          <tr>
+                            <th></th>
+                            <th class="text-center">Very Unlikely</th>
+                            <th class="text-center">Unlikely</th>
+                            <th class="text-center">Neutral</th>
+                            <th class="text-center">Likely</th>
+                            <th class="text-center">Very Likely</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="custom-table-width">Buy from us again</td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="buyFromUsAgain1" name="optradiobuyFromUsAgain" value="veryUnlikely"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="buyFromUsAgain2" name="optradiobuyFromUsAgain" value="unlikely"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="buyFromUsAgain3" name="optradiobuyFromUsAgain" value="neutral"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="buyFromUsAgain4" name="optradiobuyFromUsAgain" value="likely"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="buyFromUsAgain5" name="optradiobuyFromUsAgain" value="veryLikely"></td>
+                          </tr>
+                          <tr>
+                            <td class="custom-table-width">Recommend our product to other</td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio1" name="optradioService" value="veryUnsatified"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio2" name="optradioService" value="unSatisfied"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio3" name="optradioService" value="neutral"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio4" name="optradioService" value="satisfied"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="serviceRadio5" name="optradioService" value="verySatified"></td>
+                          </tr>
+                          <tr>
+                            <td class="custom-table-width">Recommend our company to other</td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio1" name="optradioCompanyOverall" value="veryUnsatified"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio2" name="optradioCompanyOverall" value="unSatisfied"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio3" name="optradioCompanyOverall" value="neutral"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio4" name="optradioCompanyOverall" value="satisfied"></td>
+                            <td class="text-center align-middle"><input type="radio" class="form-check-input" id="companyOverallRadio5" name="optradioCompanyOverall" value="verySatified"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                      <label class="form-label fw-bold user-label">Additional comments or suggestions</label>
+
+                      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                      <button type="button" class="btn btn-default-primary mt-3 mb-5">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
